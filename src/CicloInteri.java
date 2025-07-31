@@ -14,7 +14,7 @@ public class CicloInteri {
 
     public int getElementoSuccessivo() {
         if (!hasAncoraElementi()) {
-            throw new IllegalStateException("Non ci sono più elementi");
+            throw new IllegalStateException("Non ci sono più elementi"); //Se non ci sono più elementi, adesso non accede più all'array e lancia eccezione 
         }
         return elenco[indiceCorrente++];
     }
